@@ -1,22 +1,22 @@
-const fs = require("fs");
+// server.js
+// where your node app starts
+
+// init project
 const express = require("express");
 const app = express();
-const Contenedor = require("./classContain");
 
-const productos = new Contenedor("productos.txt")
-console.log(productos);
-app.listen(8080, ()=>{
-    console.log("server listening on port with express");
-})
+// we've started you off with Express,
+// but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
-app.get("/", (req, res)=>{
-    res.send("Desafio 3 --- Servidor con Express")
+// http://expressjs.com/en/starter/static-files.html
+app.use(express.static("public"));
+
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/", function(request, response) {
+  response.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/productos", (req, res)=>{
-    res.send(productos.getAll())
-})
-
-app.get("/productoRandom", (req, res)=>{
-    res.send(productos.getById())
-})
+// listen for requests :)
+const listener = app.listen(process.env.PORT, function() {
+  console.log("Your app is listening on port " + listener.address().port);
+});
