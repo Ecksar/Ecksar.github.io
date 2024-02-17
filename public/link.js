@@ -1,2 +1,2 @@
-const searchParams = new URLSearchParams(window.location.search);
-console.log(searchParams.get("l"));
+//const searchParams = new URLSearchParams(window.location.search);
+//console.log(searchParams.get("l"));

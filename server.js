@@ -17,7 +17,17 @@ app.get("/", function(request, response) {
 });
 app.get("/link", function(req, res) {
   res.sendFile(__dirname + "/views/link.html");
-  
+  const link = Buffer.from(req.query.l, "base64").toString();
+  res.set('Cache-Control', 'max-age=0')
+  res.redirect(308, link);
+  res.send();
+  console.log(link);
+});
+app.get("/input", function(req, res) {
+  res.sendFile(__dirname + "/views/link.html");
+  const link = btoa(req.query.l);
+  res.redirect(__dirname + "link/?l=" + link);
+  console.log(link);
 });
 
 
