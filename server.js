@@ -25,9 +25,9 @@ app.get("/link", function(req, res) {
 });
 app.get("/input", function(req, res) {
   res.sendFile(__dirname + "/views/link.html");
-  const link = btoa(req.query.l);
-  res.redirect(__dirname + "link/?l=" + link);
-  console.log(link);
+  const link = Buffer.from(req.query.l, "utf-8").toString("base64");
+  res.redirect("/link/?l=" + link);
+  console.log(__dirname);
 });
 
 
