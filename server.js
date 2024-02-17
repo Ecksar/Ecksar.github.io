@@ -24,9 +24,8 @@ app.get("/link", function(req, res) {
   console.log(link);
 });
 app.get("/input", function(req, res) {
-  res.sendFile(__dirname + "/views/input.html");
   if(req.query.bmark){
-    
+    res.sendFile(__dirname + "/views/input.html");  
   }else{
     const link = Buffer.from(req.query.l, "utf-8").toString("base64");
     res.redirect("/link/?l=" + link);
