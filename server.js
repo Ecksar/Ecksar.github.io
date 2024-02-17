@@ -15,6 +15,11 @@ app.use(express.static("public"));
 app.get("/", function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
 });
+app.get("/link", function(req, res) {
+  res.sendFile(__dirname + "/views/link.html");
+  
+});
+
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
