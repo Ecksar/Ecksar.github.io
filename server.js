@@ -25,9 +25,12 @@ app.get("/link", function(req, res) {
 });
 app.get("/input", function(req, res) {
   res.sendFile(__dirname + "/views/input.html");
-  if()
-  //const link = Buffer.from(req.query.l, "utf-8").toString("base64");
-  //res.redirect("/link/?l=" + link);
+  if(req.query.bmark){
+    
+  }else{
+    const link = Buffer.from(req.query.l, "utf-8").toString("base64");
+    res.redirect("/link/?l=" + link);
+  }
   console.log(__dirname);
 });
 
