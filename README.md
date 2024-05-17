@@ -1,3 +1,3 @@
-# Name Needed
+# MagRush
 
-## Currently WIP
+## Still a WIP
