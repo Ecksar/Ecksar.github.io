@@ -4,7 +4,7 @@ function submitLink(link){
   let finishedLink = document.getElementById("finishedLink");
   
   if(urlValid(inputLinkVal)){
-    let final = inputLinkVal;
+    let final = "https://magrush.glitch.me/input?l=" + inputLinkVal;
     finishedLink.innerHTML = final;
     finishedLink.href = final;
   }else{
@@ -15,4 +15,11 @@ function submitLink(link){
 function urlValid(url) {
     const urlPattern = /^(http|https):\/\/[^ "]+$/;
     return urlPattern.test(url);
+}
+
+function openTab(){
+  let link = document.getElementById("finishedLink").href;
+  if(link.length > "https://magrush.glitch.me/".length){
+    window.open(link);
+  }
 }
