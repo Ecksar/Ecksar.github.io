@@ -3,30 +3,49 @@
   <head>
     <title>WIP no name thing</title>
     <script src="/index.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="bg-dark align-itmes-center">
-    <h1> WIP no name thing</h1>
+    <h1>WIP no name thing</h1>
     <!-- keep the shortcut thing, for now -->
-    <h2> Also available as an <a href="https://routinehub.co/shortcut/16378">Apple Shortcut</a>.</h2>
+    <h2>
+      Also available as an
+      <a href="https://routinehub.co/shortcut/16378">Apple Shortcut</a>.
+    </h2>
     <div>
-      <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
+      <input
+        type="text"
+        id="link"
+        name="link"
+        size="100"
+        placeholder="Enter url here"
+      />
     </div>
-    <div>      
-      <button id="submitLink" type="button" onclick="submitLink()">Submit</button>
-      <button id="copyLink" type="button" onclick="copyLink()">Copy Link</button>
-      <button id="openNewTab" type="button" onclick="run()">Open link in new tab</button>
+    <div>
+      <button id="submitLink" type="button" onclick="submitLink()">
+        Submit
+      </button>
+    </div>
+    <div>
+      <span>Link: </span>
+      <a href = "" id="finishedLink"></a>
+      <br>
+      <button id="copyLink" type="button" onclick="copyLink()">
+        Copy Link
+      </button>
+      <button id="openNewTab" type="button" onclick="run()">
+        Open link in new tab
+      </button>
     </div>
     <script>
-
       var input = document.getElementById("link");
-      input.addEventListener("keypress", function(event) {
+      input.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
           event.preventDefault();
           document.getElementById("submitLink").click();
         }
-      })
+      });
     </script>
   </body>
 </html>
