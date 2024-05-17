@@ -1,13 +1,34 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
-    <title>Welcome!</title>
-    <script src="/client.js" defer></script>
+    <title>WIP no name thing</title>
+    <script src="js/index.js/"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
-    <h1>Homepage WIP</h1>
-    <input></input>
+  <body class="bg-dark align-itmes-center">
+    <h1> WIP no name thing</h1>
+    <!-- keep the shortcut thing, for now -->
+    <h2> Also available as an <a href="https://routinehub.co/shortcut/16378">Apple Shortcut</a>.</h2>
+    <div class="d-flex justify-content-center">
+      <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
+    </div>
+    <div class="pt-4 d-flex justify-content-center">      
+      <button id="copyLink" type="button" onclick="createPermalink()">Copy Link</button>
+      <button id="openNewTab" type="button" onclick="run()">Open link in new tab</button>
+    </div>
+    <script>
+      if (getCookie("timezone") === "") {
+        var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+        document.cookie = "timezone=" + timezone + ";path=/";
+      }
+      var input = document.getElementById("link");
+      input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("button").click();
+        }
+      })
+    </script>
   </body>
 </html>
