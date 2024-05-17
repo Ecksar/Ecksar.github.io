@@ -2,7 +2,7 @@
 <html lang="en-GB">
   <head>
     <title>WIP no name thing</title>
-    <script src="js/index.js/"></script>
+    <script src="/index.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -10,23 +10,21 @@
     <h1> WIP no name thing</h1>
     <!-- keep the shortcut thing, for now -->
     <h2> Also available as an <a href="https://routinehub.co/shortcut/16378">Apple Shortcut</a>.</h2>
-    <div class="d-flex justify-content-center">
+    <div>
       <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
     </div>
-    <div class="pt-4 d-flex justify-content-center">      
-      <button id="copyLink" type="button" onclick="createPermalink()">Copy Link</button>
+    <div>      
+      <button id="submitLink" type="button" onclick="submitLink()">Submit</button>
+      <button id="copyLink" type="button" onclick="copyLink()">Copy Link</button>
       <button id="openNewTab" type="button" onclick="run()">Open link in new tab</button>
     </div>
     <script>
-      if (getCookie("timezone") === "") {
-        var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-        document.cookie = "timezone=" + timezone + ";path=/";
-      }
+
       var input = document.getElementById("link");
       input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
           event.preventDefault();
-          document.getElementById("button").click();
+          document.getElementById("submitLink").click();
         }
       })
     </script>
