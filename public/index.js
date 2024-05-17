@@ -23,3 +23,10 @@ function openTab(){
     window.open(link);
   }
 }
+
+function copyLink(){
+  let link = document.getElementById("finishedLink").href;
+  if(link.length > "https://magrush.glitch.me/".length){
+    navigator.clipboard.writeText(link);
+  }
+}
