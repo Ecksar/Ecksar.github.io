@@ -1,15 +1,21 @@
 @font-face {
-    font-family: 'JetBrains_Bold'; /*a name to be used later*/
-    src: url('https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Bold.ttf?v=1716035400315'); /*URL to font*/
+  font-family: "JetBrains_Bold"; /*a name to be used later*/
+  src: url("https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Bold.ttf?v=1716035400315"); /*URL to font*/
 }
 
-@font-face{
-  font-family: 'JetBrains_Medium';
-  src: url('https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Medium.ttf?v=1716036350601');
+@font-face {
+  font-family: "JetBrains_Medium";
+  src: url("https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Medium.ttf?v=1716036350601");
 }
 
 /* Reset some default styles */
-body, h1, h2, h3, p, input, button {
+body,
+h1,
+h2,
+h3,
+p,
+input,
+button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,16 +42,23 @@ h1 {
 }
 
 h2 {
+  font-family: JetBrains_Medium, sans-serif;
   font-size: 1.5em;
   margin-bottom: 30px;
   color: #9417e2;
 }
 
-h2 a {
-  color: #b24bf3;
-  text-decoration: none;
+a {
+  font-family: JetBrains_Medium, sans-serif;
+  padding: 5px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #9417e2;
+  color: white;
+  transition: background-color 0.3s;
 }
-
 
 h2 a:hover {
   text-decoration: underline;
@@ -53,7 +66,7 @@ h2 a:hover {
 
 /* Input field styles */
 .inputField {
-  margin-bottom:15px;
+  margin-bottom: 15px;
   width: 100%;
   max-width: 1200px;
 }
@@ -80,12 +93,13 @@ h2 a:hover {
 
 .linkDisplay {
   font-weight: bold;
+  display: none;
 }
 .valid {
-  color:#00cc00;
+  color: #00cc00;
 }
 .invalid {
-  color:#ff0000;
+  color: #ff0000;
 }
 
 .linkDisplay a {
@@ -135,3 +149,4 @@ h2 a:hover {
   font-size: 1em;
   color: #666;
 }
+

@@ -2,16 +2,35 @@
 <html lang="en-GB">
   <head>
     <title>MagRush</title>
-    <meta name="description" content="MG begone">
-    <link rel="icon" sizes="16x16" href="https://cdn.glitch.global/c8c00e61-3de6-48eb-8a8d-23e3b39614d9/favicon-16x16.png?v=1704445794147">
-    <link rel="icon" sizes="32x32" href="https://cdn.glitch.global/c8c00e61-3de6-48eb-8a8d-23e3b39614d9/favicon-32x32.png?v=1704445796553">
-    <link rel="icon" sizes="192x192" href="https://cdn.glitch.global/c8c00e61-3de6-48eb-8a8d-23e3b39614d9/android-chrome-192x192.png?v=1704445536503">
-    <link rel="icon" sizes="512x512" href="https://cdn.glitch.global/c8c00e61-3de6-48eb-8a8d-23e3b39614d9/android-chrome-512x512.png?v=1704445594033">
-    <link rel="icon" href="https://cdn.glitch.global/c8c00e61-3de6-48eb-8a8d-23e3b39614d9/favicon.ico?v=1704445799419">
+    <meta name="description" content="MG begone" />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/favicon-16x16.png?v=1716038016502"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/favicon-32x32.png?v=1716038017129"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/android-chrome-192x192.png?v=1716038009146"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/android-chrome-512x512.png?v=1716038013852"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/favicon.ico?v=1716038015836"
+    />
     <script src="/index.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <h1>MagRush</h1>
@@ -29,33 +48,29 @@
         placeholder="Enter url here"
       />
     </div>
-    <div class="linkDisplay">
-      <span id="linkDesc" class = "valid">Link: </span>
-      <a href = "" id="finishedLink"></a>
+    <div id = "linkDisplay" class="linkDisplay">
+      <span id="linkDesc" class="valid">Link: </span>
+      <a href="" id="finishedLink"></a>
+      <div class="actions">
+        <button id="copyLink" type="button" onclick="copyLink()">
+          Copy Link
+        </button>
+        <button id="openNewTab" type="button" onclick="openTab()">
+          Open link in new tab
+        </button>
+      </div>
     </div>
-    <div class = "actions">
-      <button id="copyLink" type="button" onclick="copyLink()">
-        Copy Link
-      </button>
-      <button id="openNewTab" type="button" onclick="openTab()">
-        Open link in new tab
-      </button>
-    </div>
+
     <div class="instructions">
-      <h3>
-        Created by Razgriz and osiahmelon
-      </h3>
-      <p>
-        Original idea by molangning
-      </p>
+      <h3>Created by Razgriz and osiahmelon</h3>
+      <p>Original idea by molangning</p>
     </div>
     <script>
       var input = document.getElementById("link");
       input.addEventListener("input", function (event) {
-         event.preventDefault();
-          submitLink();
+        event.preventDefault();
+        submitLink();
       });
-      
     </script>
   </body>
 </html>

@@ -2,6 +2,7 @@ console.log("running on home");
 function submitLink(link){
   let inputLinkVal = document.getElementById("link").value;
   let finishedLink = document.getElementById("finishedLink");
+  let link
   let linkDesc = document.getElementById("linkDesc");
   
   if(urlValid(inputLinkVal)){
@@ -11,8 +12,7 @@ function submitLink(link){
     linkDesc.innerHTML = "Link: ";
     linkDesc.className = "valid";
   }else{
-    finishedLink.innerHTML = "";
-    finishedLink.href = "";
+    finishedLink.style.display = "none";
     linkDesc.innerHTML = "Invalid link";
     linkDesc.className = "invalid";
  ;}
