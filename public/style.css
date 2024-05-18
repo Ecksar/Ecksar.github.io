@@ -33,6 +33,13 @@ body {
   padding: 20px;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+
 /* Header styles */
 h1 {
   font-family: JetBrains_Bold, sans-serif;
@@ -101,7 +108,8 @@ h2 a:hover {
 }
 
 .linkDisplay a {
-  color: #bc61f5;
+  color: #9417e2;
+  /*ok bye for today*/
   text-decoration: none;
 }
 
