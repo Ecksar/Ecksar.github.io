@@ -95,15 +95,13 @@ h2 a:hover {
   font-weight: bold;
   display: none;
 }
-.valid {
-  color: #00cc00;
-}
-.invalid {
+.linkError {
   color: #ff0000;
+  display: none;
 }
 
 .linkDisplay a {
-  color: #880ed4;
+  color: #bc61f5;
   text-decoration: none;
 }
 
