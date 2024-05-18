@@ -23,12 +23,7 @@
       />
     </div>
     <div>
-      <button id="submitLink" type="button" onclick="submitLink()">
-        Submit
-      </button>
-    </div>
-    <div>
-      <span>Link: </span>
+      <span id="linkDesc" class = "valid">Link: </span>
       <a href = "" id="finishedLink"></a>
       <br>
       <button id="copyLink" type="button" onclick="copyLink()">
@@ -48,12 +43,11 @@
     </div>
     <script>
       var input = document.getElementById("link");
-      input.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          document.getElementById("submitLink").click();
-        }
+      input.addEventListener("input", function (event) {
+         event.preventDefault();
+          submitLink();
       });
+      
     </script>
   </body>
 </html>

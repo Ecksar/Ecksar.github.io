@@ -2,14 +2,20 @@ console.log("running on home");
 function submitLink(link){
   let inputLinkVal = document.getElementById("link").value;
   let finishedLink = document.getElementById("finishedLink");
+  let linkDesc = document.getElementById("linkDesc");
   
   if(urlValid(inputLinkVal)){
     let final = "https://magrush.glitch.me/input?l=" + inputLinkVal;
     finishedLink.innerHTML = final;
     finishedLink.href = final;
+    linkDesc.innerHTML = "Link: ";
+    linkDesc.class = "valid";
   }else{
-    alert("are you ok?")
-  }
+    linkDesc.innerHTML = "Invalid link";
+    linkDesc.calss = "invalid";
+  
+    f
+    finishedLink.href = "";}
 }
 
 function urlValid(url) {
