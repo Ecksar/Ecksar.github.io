@@ -9,12 +9,12 @@ function submitLink(link){
     finishedLink.innerHTML = final;
     finishedLink.href = final;
     linkDesc.innerHTML = "Link: ";
-    linkDesc.class = "valid";
+    linkDesc.className = "valid";
   }else{
     finishedLink.innerHTML = "";
     finishedLink.href = "";
     linkDesc.innerHTML = "Invalid link";
-    linkDesc.calss = "invalid";
+    linkDesc.className = "invalid";
  ;}
 }
 
