@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'JetBrains_Mono'; /*a name to be used later*/
+    font-family: 'JetBrains_Bold'; /*a name to be used later*/
     src: url('https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Bold.ttf?v=1716035400315'); /*URL to font*/
+}
+
+@font-face{
+  font-family: 'JetBrains_Medium';
+  src: url('https://cdn.glitch.global/55faa7d2-2695-40bc-95ae-acd1ef99fd0f/JetBrainsMono-Medium.ttf?v=1716036350601');
 }
 
 /* Reset some default styles */
@@ -11,8 +16,8 @@ body, h1, h2, h3, p, input, button {
 }
 
 body {
-  font-family: JetBrains_Mono, sans-serif;
-  background-color: #333333;
+  font-family: JetBrains_Bold, sans-serif;
+  background-color: #242424;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -26,17 +31,17 @@ body {
 h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #007acc;
+  color: #b24bf3;
 }
 
 h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: #005a9e;
+  color: #880ed4;
 }
 
 h2 a {
-  color: #007acc;
+  color: #b24bf3;
   text-decoration: none;
 }
 
@@ -61,7 +66,7 @@ h2 a:hover {
 }
 
 .inputField input:focus {
-  border-color: #007acc;
+  border-color: #880ed4;
   outline: none;
 }
 
@@ -82,7 +87,7 @@ h2 a:hover {
 }
 
 .linkDisplay a {
-  color: #007acc;
+  color: #880ed4;
   text-decoration: none;
 }
 
@@ -96,19 +101,20 @@ h2 a:hover {
 }
 
 .actions button {
+  font-family: JetBrains_Bold, sans-serif;
   padding: 10px 20px;
   font-size: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #007acc;
+  background-color: #880ed4;
   color: white;
   margin-right: 10px;
   transition: background-color 0.3s;
 }
 
 .actions button:hover {
-  background-color: #005a9e;
+  background-color: #6c0ba9;
 }
 
 /* Instructions section styles */
@@ -120,7 +126,7 @@ h2 a:hover {
 .instructions h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #007acc;
+  color: #880ed4;
 }
 
 .instructions p {
