@@ -16,7 +16,7 @@ body, h1, h2, h3, p, input, button {
 }
 
 body {
-  font-family: JetBrains_Bold, sans-serif;
+  font-family: JetBrains_Medium, sans-serif;
   background-color: #242424;
   color: #333;
   display: flex;
@@ -29,15 +29,16 @@ body {
 
 /* Header styles */
 h1 {
+  font-family: JetBrains_Bold, sans-serif;
   font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #b24bf3;
+  margin-bottom: 15px;
+  color: #bc61f5;
 }
 
 h2 {
   font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #880ed4;
+  margin-bottom: 30px;
+  color: #9417e2;
 }
 
 h2 a {
@@ -51,9 +52,9 @@ h2 a:hover {
 
 /* Input field styles */
 .inputField {
-  margin-bottom: 20px;
+  margin-bottom:15px;
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
 }
 
 .inputField input {
@@ -66,13 +67,13 @@ h2 a:hover {
 }
 
 .inputField input:focus {
-  border-color: #880ed4;
+  border-color: #9417e2;
   outline: none;
 }
 
 /* Link display styles */
 .linkDisplay {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 1em;
 }
 
@@ -97,19 +98,19 @@ h2 a:hover {
 
 /* Button styles */
 .actions {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .actions button {
-  font-family: JetBrains_Bold, sans-serif;
+  font-family: JetBrains_Medium, sans-serif;
   padding: 10px 20px;
   font-size: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #880ed4;
+  background-color: #9417e2;
   color: white;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: background-color 0.3s;
 }
 
@@ -119,14 +120,14 @@ h2 a:hover {
 
 /* Instructions section styles */
 .instructions {
-  max-width: 600px;
+  max-width: 1200px;
   text-align: center;
 }
 
 .instructions h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #880ed4;
+  color: #9417e2;
 }
 
 .instructions p {
