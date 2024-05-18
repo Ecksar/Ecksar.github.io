@@ -1,56 +1,124 @@
-/* this file is loaded by index.html and styles the page */
-
-* {
+/* Reset some default styles */
+body, h1, h2, h3, p, input, button {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  margin: 2em 1em;
-  line-height: 1.5em;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Header styles */
 h1 {
-  font-style: italic;
-  color: #373fff;
-  max-width: calc(100% - 5rem);
-  line-height: 1.1;
-}
-
-form {
-  background-color: #eee;
-  display: grid;
-  grid-gap: 1em;
-  padding: 1em;
-  max-width: 40ch;
-}
-
-input {
-  border: 1px solid silver;
-  display: block;
-  font-size: 16px;
+  font-size: 2.5em;
   margin-bottom: 10px;
-  padding: 5px;
+  color: #007acc;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #005a9e;
+}
+
+h2 a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Input field styles */
+.inputField {
+  margin-bottom: 20px;
   width: 100%;
+  max-width: 600px;
 }
 
-form button {
-  background-color: #bbbbf2;
-  border: 2px solid currentColor;
-  border-radius: .25em;
+.inputField input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.inputField input:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+/* Link display styles */
+.linkDisplay {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.linkDisplay {
+  font-weight: bold;
+}
+.valid {
+  color:#00ff00;
+}
+.invalid {
+  color:#ff0000;
+}
+
+.linkDisplay a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.linkDisplay a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+.actions {
+  margin-bottom: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: inherit;
-  line-height: 1.4em;
-  padding: 0.25em 1em;
-  max-width: 20ch;
+  background-color: #007acc;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
-  background-color: lavender;
+.actions button:hover {
+  background-color: #005a9e;
 }
 
-footer {
-  margin-top: 3em;
-  padding-top: 1.5em;
-  border-top: 1px solid lightgrey;
+/* Instructions section styles */
+.instructions {
+  max-width: 600px;
+  text-align: center;
+}
+
+.instructions h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+.instructions p {
+  font-size: 1em;
+  color: #666;
 }

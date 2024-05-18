@@ -11,11 +11,11 @@ function submitLink(link){
     linkDesc.innerHTML = "Link: ";
     linkDesc.class = "valid";
   }else{
+    finishedLink.innerHTML = "";
+    finishedLink.href = "";
     linkDesc.innerHTML = "Invalid link";
     linkDesc.calss = "invalid";
-  
-    f
-    finishedLink.href = "";}
+ ;}
 }
 
 function urlValid(url) {

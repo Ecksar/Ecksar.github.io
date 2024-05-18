@@ -5,15 +5,16 @@
     <script src="/index.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css"/>
   </head>
-  <body class="bg-dark align-itmes-center">
+  <body>
     <h1>MagRush</h1>
     <!-- keep the shortcut thing -->
     <h2>
       Also available as an
       <a href="https://routinehub.co/shortcut/16378">Apple Shortcut</a>.
     </h2>
-    <div>
+    <div class="inputField">
       <input
         type="text"
         id="link"
@@ -22,10 +23,11 @@
         placeholder="Enter url here"
       />
     </div>
-    <div>
+    <div class="linkDisplay">
       <span id="linkDesc" class = "valid">Link: </span>
       <a href = "" id="finishedLink"></a>
-      <br>
+    </div>
+    <div class = "actions">
       <button id="copyLink" type="button" onclick="copyLink()">
         Copy Link
       </button>
@@ -33,7 +35,7 @@
         Open link in new tab
       </button>
     </div>
-    <div>
+    <div class="instructions">
       <h3>
         How to use direct link
       </h3>
