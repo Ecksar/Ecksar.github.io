@@ -97,8 +97,8 @@ h2 a:hover {
 
 .linkDisplay a {
   color: #9417e2;
-  /*ok bye for today*/
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .linkDisplay a:hover {
@@ -111,6 +111,7 @@ h2 a:hover {
 }
 
 .actions button {
+  margin-top: 15px;
   font-family: JetBrains_Medium, sans-serif;
   padding: 10px 20px;
   font-size: 1em;

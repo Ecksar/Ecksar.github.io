@@ -16,9 +16,7 @@ function submitLink(link){
     linkError.style.display = "inline-block";
  ;}
 }
-//@razgriz help me fix the styling
-//span needs styling
-// linkDisplay looks cursed in generalye ik
+
 function urlValid(url) {
     const urlPattern = /^(http|https):\/\/[^ "]+$/;
     return urlPattern.test(url);
