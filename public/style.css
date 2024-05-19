@@ -33,32 +33,28 @@ h1 {
   font-family: JetBrains_Medium, sans-serif;
   font-size: 2.5em;
   margin-bottom: 15px;
-  color: #bc61f5;
+  color: #cb78ff;
 }
 
 h2 {
   font-family: JetBrains_Medium, sans-serif;
   font-size: 1.5em;
   margin-bottom: 30px;
-  color: #9417e2;
+  color: #ab38f2;
 }
 
-a {
+.buttonLink{
   font-family: JetBrains_Medium, sans-serif;
   padding: 5px;
   font-size: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #9417e2;
+  background-color: #ab38f2;
   color: white;
   transition: background-color 0.3s;
 }
-
-h2 a:hover {
-  text-decoration: underline;
-}
-
+  
 /* Input field styles */
 .inputField {
   margin-bottom: 15px;
@@ -76,7 +72,7 @@ h2 a:hover {
 }
 
 .inputField input:focus {
-  border-color: #9417e2;
+  border-color: #ab38f2;
   outline: none;
 }
 
@@ -96,7 +92,8 @@ h2 a:hover {
 }
 
 .linkDisplay a {
-  color: #9417e2;
+  /*color: #ab38f2;*/
+  color: #ffffff;
   text-decoration: none;
   margin-bottom: 5px;
 }
@@ -118,7 +115,7 @@ h2 a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #9417e2;
+  background-color: #ab38f2;
   color: white;
   margin-right: 20px;
   transition: background-color 0.3s;
@@ -137,7 +134,7 @@ h2 a:hover {
 .instructions h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #9417e2;
+  color: #ab38f2;
 }
 
 .instructions p {
