@@ -102,6 +102,10 @@ h2 {
   text-decoration: underline;
 }
 
+.linkDisplay .text{
+  color: #cb78ff;
+}
+
 /* Button styles */
 .actions {
   margin-bottom: 30px;
