@@ -78,7 +78,7 @@ h2 {
 
 /* Link display styles */
 .linkDisplay {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 1em;
 }
 
@@ -89,6 +89,7 @@ h2 {
 .linkError {
   color: #ff0000;
   display: none;
+  margin-bottom: 10px;
 }
 
 .linkDisplay a {
@@ -109,7 +110,7 @@ h2 {
 /* Button styles */
 .actions {
   margin-bottom: 15px;
-  m
+  text-align: center;
 }
 
 .actions button {
@@ -122,7 +123,7 @@ h2 {
   cursor: pointer;
   background-color: #ab38f2;
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
   transition: background-color 0.3s;
 }
 
