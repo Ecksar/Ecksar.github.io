@@ -1,2 +1,4 @@
-const link = btoa(new URLSearchParams(window.location.search).get("l"));
-window.open('/link/?l=' + link, '_blank');
+new URLSearchParams(window.location.search).get("l")
+
+const finalLink = btoa(link);
+window.open('/link/?l=' + finalLink, '_blank');
