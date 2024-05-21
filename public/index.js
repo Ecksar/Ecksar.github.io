@@ -6,6 +6,7 @@ function submitLink(link){
   let linkError = document.getElementById("linkError");
   
   if(urlValid(inputLinkVal)){
+    
     let final = "https://magrush.glitch.me/input?l=" + inputLinkVal;
     finishedLink.innerHTML = final;
     finishedLink.href = final;
@@ -28,6 +29,11 @@ function urlValid(url) {
    'i'
  );
     return urlPattern.test(url);
+}
+
+function appendHttp(url) {
+    // Check if the link starts with "http://" or "https://"
+
 }
 
 function openTab(){
